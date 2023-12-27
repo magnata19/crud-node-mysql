@@ -1,0 +1,17 @@
+{
+  "name": "curso-ralf-node",
+  "version": "1.0.0",
+  "description": "Projeto NodeJs e MySql",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "express-handlebars",
+    "bootstrap",
+    "mysql"
+  ],
+  "author": "Davidson Pacifico",
+  "license": "ISC"
+}
