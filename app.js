@@ -1,5 +1,14 @@
 const express = require('express')
+
+
+const {engine} = require('express-handlebars')
+
 const app = express();
+
+//configuração express handlebars
+app.engine('handlebars', engine())
+app.set('view engine','handlebars')
+app.set('views', './views')
 
 const mysql = require('mysql2')
 
@@ -16,8 +25,7 @@ conexao.connect((err) => {
 })
 
 app.get('/', (req, res) => {
-  res.write('hello ')
-  res.end()
+  res.render('formulario')
 })
 
 app.listen(8080, () => {
